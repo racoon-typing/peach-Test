@@ -1,8 +1,13 @@
 @import "vendor";
-$main-color: #efefef;
+$main-color: black;
 
 body {
     background-color: $main-color;
+    background-image: url('../img/content-1.jpeg');
+}
+
+main {
+    background-color: antiquewhite;
 }
 
 .page {
