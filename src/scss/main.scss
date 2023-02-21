@@ -1,0 +1,15 @@
+@import "vendor";
+$main-color: #efefef;
+
+body {
+    background-color: $main-color;
+}
+
+.page {
+    background-color: aqua;
+
+    &__body {
+        color: $main-color;
+        background-color: #e6e6ee;
+    }
+}

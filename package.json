@@ -1,0 +1,36 @@
+{
+  "name": "peach-test",
+  "version": "1.0.0",
+  "description": "simple webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "start": "cross-env NODE_ENV=development webpack serve --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/racoon-typing/peach-Test.git"
+  },
+  "author": "Daniil Suvorov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/racoon-typing/peach-Test/issues"
+  },
+  "homepage": "https://github.com/racoon-typing/peach-Test#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^5.1.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "node-sass": "^6.0.0",
+    "sass-loader": "^13.2.0",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
