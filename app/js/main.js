@@ -16,6 +16,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./img/icon-youtube.svg":
+/*!******************************!*\
+  !*** ./img/icon-youtube.svg ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "./img/icon-youtube.svg");
+
+/***/ }),
+
 /***/ "./index.html":
 /*!********************!*\
   !*** ./index.html ***!
@@ -25,9 +40,11 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 var ___HTML_LOADER_GET_SOURCE_FROM_IMPORT___ = __webpack_require__(/*! ../node_modules/html-loader/dist/runtime/getUrl.js */ "../node_modules/html-loader/dist/runtime/getUrl.js");
 var ___HTML_LOADER_IMPORT_0___ = __webpack_require__(/*! ./img/content-1.jpeg */ "./img/content-1.jpeg");
+var ___HTML_LOADER_IMPORT_1___ = __webpack_require__(/*! ./img/icon-youtube.svg */ "./img/icon-youtube.svg");
 // Module
 var ___HTML_LOADER_REPLACEMENT_0___ = ___HTML_LOADER_GET_SOURCE_FROM_IMPORT___(___HTML_LOADER_IMPORT_0___);
-var code = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Document</title>\n</head>\n<body>\n    <main class=\"site-container\">\n        <p>\n            Далеко Далеко \n        </p>\n\n        <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"фото1\" width=\"300\" height=\"100\">\n        <!-- <img src=\"img/content-2.jpeg\" alt=\"фото2\" width=\"300\" height=\"100\">\n        <img src=\"img/content-3.jpeg\" alt=\"фото3\" width=\"300\" height=\"100\"> -->\n    </main>\n</body>\n</html>";
+var ___HTML_LOADER_REPLACEMENT_1___ = ___HTML_LOADER_GET_SOURCE_FROM_IMPORT___(___HTML_LOADER_IMPORT_1___);
+var code = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Document</title>\n</head>\n<body>\n    <main class=\"site-container\">\n        <p>\n            Далеко Далеко \n        </p>\n\n        <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"фото1\" width=\"300\" height=\"100\">\n        <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"фото1\" width=\"300\" height=\"100\">\n        <!-- <img src=\"img/content-2.jpeg\" alt=\"фото2\" width=\"300\" height=\"100\">\n        <img src=\"img/content-3.jpeg\" alt=\"фото3\" width=\"300\" height=\"100\"> -->\n    </main>\n</body>\n</html>";
 // Exports
 module.exports = code;
 
