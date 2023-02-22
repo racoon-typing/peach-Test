@@ -318,19 +318,19 @@ template {
   font-weight: 600;
   font-style: normal; }
 
-body {
+.page__body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   font-family: 'Proxima Nova Condensed';
-  background-color: black;
-  background-image: url(.././img/content-1.jpeg); }
+  background-color: #ffffff; }
 
-main {
-  background-color: antiquewhite; }
-
-.page {
-  background-color: aqua; }
-  .page__body {
-    color: black;
-    background-color: #e6e6ee; }
+.header {
+  width: 100%; }
+  .header__wrapper {
+    width: 100%;
+    max-width: 1250px;
+    background-color: #ffffff; }
 
 
 /*# sourceMappingURL=main.css.map*/
