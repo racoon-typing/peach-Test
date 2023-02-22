@@ -1,7 +1,10 @@
 @import "vendor";
+@import "fonts";
+
 $main-color: black;
 
 body {
+    font-family: 'Proxima Nova Condensed';
     background-color: $main-color;
     background-image: url('../img/content-1.jpeg');
 }

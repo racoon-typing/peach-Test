@@ -3,6 +3,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+// const  CssMinimizerPlugin  =  require ( "css-minimizer-webpack-plugin" ) ;
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -45,6 +46,7 @@ module.exports = {
             ]
         })
     ],
+    devtool: isProd ? false : 'source-map',
     module: {
         rules: [
             {
@@ -82,13 +84,25 @@ module.exports = {
                 ],
             },
             {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: ['babel-loader'],
+            },
+            {
                 test: /\.(?:|gif|png|jpg|jpeg|svg)$/i,
                 loader: 'file-loader',
                 options: {
                     name: `./img/${filename('[ext]')}`,
-                    outputPath: 'img',
+                }
+            },
+            {
+                test: /\.(?:|woff2)$/,
+                loader: 'file-loader',
+                options: {
+                    name: `./fonts/${filename('[ext]')}`,
                 }
             }
+            
         ]
     }
 };
