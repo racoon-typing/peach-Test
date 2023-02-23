@@ -362,7 +362,99 @@ template {
   min-height: 300px;
   background-image: url(../assets/bg-banner.png);
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 60px; }
+  .banner__wrapper {
+    padding: 40px 5px 0; }
+  .banner__text {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%; }
+  .banner__link {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    min-height: 32px;
+    background: #B01736;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none; }
+
+.about {
+  width: 100%;
+  margin-bottom: 50px; }
+  .about__wrapper {
+    padding: 24px 5px;
+    background: #ffffff;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08); }
+  .about__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    color: #B01736; }
+
+.number {
+  width: 100%;
+  margin-bottom: 50px; }
+  .number__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: center; }
+  .number__item {
+    width: max-content;
+    margin-bottom: 24px; }
+    .number__item:last-child {
+      width: 180px; }
+    .number__item:nth-child(1) {
+      margin-right: 8px; }
+    .number__item:nth-child(3) {
+      margin-right: 40px; }
+    .number__item-title {
+      margin: 0;
+      text-align: center;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 80%;
+      color: #A30C33;
+      opacity: 0.95;
+      margin-bottom: 4px; }
+    .number__item-text {
+      margin: 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center; }
+
+.map {
+  width: 100%; }
+  .map__header {
+    width: 100%;
+    padding-top: 18px;
+    padding-left: 5px; }
+    .map__header-title {
+      margin: 0;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 100%;
+      padding-right: 26px;
+      margin-bottom: 20px; }
+    .map__header-list {
+      display: flex;
+      overflow-x: auto;
+      padding: 0;
+      margin: 0;
+      list-style-type: none; }
+    .map__header-item {
+      width: max-content; }
 
 
 /*# sourceMappingURL=main.css.map*/

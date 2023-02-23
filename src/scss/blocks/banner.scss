@@ -4,4 +4,31 @@
     background-image: url("../assets/bg-banner.png");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+    margin-bottom: 60px;
+
+    &__wrapper {
+        padding: 40px 5px 0;
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 100%;
+    }
+
+    &__link {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 110px;
+        min-height: 32px;
+        background: #B01736;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 19px;
+        color: $third-color;
+        text-decoration: none;
+    }
 }
