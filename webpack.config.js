@@ -42,11 +42,11 @@ const plugins = () => {
         new MiniCssExtractPlugin({
             filename: `./css/${filename('css')}`,
         }),
-        // new CopyWebpackPlugin({ 
-        //     patterns: [
-        //         { from: path.resolve(__dirname, 'src/assets'), to: path.resolve(__dirname, 'app/assets') }
-        //     ]
-        // })
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: path.resolve(__dirname, 'src/assets'), to: path.resolve(__dirname, 'app/assets') }
+            ]
+        })
     ];
 
     if (isProd) {
@@ -109,7 +109,7 @@ module.exports = {
                 }
             },
             {
-                test: /\.css$/i,
+                test: /\.css$/,
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -128,8 +128,8 @@ module.exports = {
                         options: {
                             publicPath: (resourcePath, context) => {
                                 return path.relative(path.dirname(resourcePath), context) + '/';
-                            }
-                        }
+                            },
+                        },
                     },
                     "css-loader",
                     "sass-loader"
@@ -142,9 +142,14 @@ module.exports = {
             },
             {
                 test: /\.(?:|gif|png|jpg|jpeg|svg)$/i,
+                // type: 'asset/resource',
                 loader: 'file-loader',
+                // options: {
+                //     name: `./img/${filename('[ext]')}`,
+                // }
                 options: {
-                    name: `./img/${filename('[ext]')}`,
+                    name: '[path][name].[ext]',
+                    context: ''
                 }
             },
             {

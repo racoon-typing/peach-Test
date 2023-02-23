@@ -1,0 +1,13 @@
+// Общие стили: Страница
+.page {
+    &__body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        font-family: 'Proxima Nova Condensed';
+        background-color: $bg-main-color;
+        color: $main-color;
+        padding: 0 15px;
+    }
+}

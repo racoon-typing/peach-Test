@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    background-color: $bg-main-color;
+     
+    &__wrapper {
+        width: 100%;
+        max-width: 1250px;
+        box-sizing: border-box;
+        padding: 16px 5px 16px;
+    }
+
+    &__logo {
+        width: 125px;
+        height: 25px;
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+}

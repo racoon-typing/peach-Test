@@ -1,0 +1,14 @@
+.menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 114px 1fr;
+    row-gap: 5px;
+    column-gap: 10px;
+
+    &__item {
+        width: 100%;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
