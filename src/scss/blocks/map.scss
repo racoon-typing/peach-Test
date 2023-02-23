@@ -1,5 +1,13 @@
 .map {
     width: 100%;
+    margin-bottom: 50px;
+
+    &__wrapper {
+        &-content {
+            min-height: 372px;
+            overflow-x: auto;
+        }
+    }
 
     &__header {
         width: 100%;
@@ -24,7 +32,23 @@
         }
 
         &-item {
-            width: max-content;
+            width: auto;
+            padding-bottom: 20px;
+            font-weight: 600;
+
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+
+            &-text {
+                margin: 0;
+                min-width: max-content;         
+            }
+
+            &--current {
+                color: $second-color;
+                border-bottom: 2px solid $bg-second-color;
+            }
         }
     }
 
