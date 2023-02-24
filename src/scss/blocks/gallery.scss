@@ -1,0 +1,20 @@
+.gallery {
+    width: 100%;
+    
+    &__wrapper {
+        padding: 50px 5px;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 600;
+font-size: 28px;
+line-height: 100%;
+margin-bottom: 15px;
+    }
+
+    &__slider {
+        width: 100px;
+        min-height: 210px;
+    }
+}

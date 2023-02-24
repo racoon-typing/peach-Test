@@ -618,25 +618,47 @@ template {
       font-weight: 600;
       font-size: 28px;
       line-height: 100%;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 40px; }
     .benefits-column__top-list {
       padding: 0;
       margin: 0;
       list-style-type: none; }
+  .benefits-column__bottom {
+    padding: 24px 0; }
+    .benefits-column__bottom-title {
+      margin: 0;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 120%;
+      text-align: center;
+      margin-bottom: 25px; }
+      .benefits-column__bottom-title span {
+        display: inline-block;
+        color: #B01736;
+        margin-top: 5px; }
+    .benefits-column__bottom-list {
+      margin: 0;
+      padding: 0; }
   .benefits__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 24px; }
+    .benefits__list--second {
+      margin: 0; }
   .benefits__item {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 120px;
-    margin-right: 10px;
-    margin-bottom: 25px; }
-    .benefits__item:nth-child(1) .benefits__item-icon::before {
-      position: absolute; }
+    width: 120px; }
+    .benefits__item:not(:last-child) {
+      margin-right: 10px;
+      margin-bottom: 25px; }
+    .benefits__item--second:not(:last-child) {
+      margin-bottom: 25px;
+      margin-right: 25px; }
     .benefits__item-text {
       margin: 0;
       font-weight: 400;
@@ -645,12 +667,32 @@ template {
       text-align: center;
       text-transform: uppercase; }
     .benefits__item-icon {
-      width: 80px;
-      height: 80px;
-      background-color: #000000;
-      opacity: 0.05;
-      border-radius: 50%;
-      margin-bottom: 10px; }
+      width: 35px;
+      height: 35px;
+      display: block; }
+      .benefits__item-icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        background-color: #0000000d;
+        border-radius: 50%;
+        margin-bottom: 10px; }
+
+.gallery {
+  width: 100%; }
+  .gallery__wrapper {
+    padding: 50px 5px; }
+  .gallery__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    margin-bottom: 15px; }
+  .gallery__slider {
+    width: 100px;
+    min-height: 210px; }
 
 
 /*# sourceMappingURL=main.css.map*/
